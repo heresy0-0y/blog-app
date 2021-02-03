@@ -24,7 +24,6 @@ const getPost = async (req, res) => {
   }
 };
 
-
 const createPost = async (req, res) => {
   try {
       const post = await new Post(req.body)
