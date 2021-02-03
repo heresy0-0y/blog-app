@@ -23,3 +23,5 @@ const getPost = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+const postPost = async (req, res) => {};
