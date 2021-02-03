@@ -1,7 +1,4 @@
 # blog-app
-<<<<<<< HEAD
-This is a readme.
-=======
 
 ### back-end:
  - [ ] construct schemas: posts, users
@@ -28,4 +25,3 @@ This is a readme.
 - [ ] css by component
 - [ ] create and replace favicon
 - [ ] edit title, and meta tags
->>>>>>> 1c37a74129baf5ff1d72ba856e2276b458f15071
