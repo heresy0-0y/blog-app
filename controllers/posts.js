@@ -1,4 +1,4 @@
-const Post = require("../models/user");
+const Post = require("../models/post");
 const db = require("../db/connection");
 
 db.on("error", console.error.bind(console, "MongoBleepBloop erger: "));
