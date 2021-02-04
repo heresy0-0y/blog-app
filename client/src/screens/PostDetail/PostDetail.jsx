@@ -47,3 +47,5 @@ const PostDetail = (props) => {
     </Layout>
   );
 };
+
+export default PostDetail

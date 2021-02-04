@@ -25,7 +25,7 @@ const Posts = (props) => {
 
   const handleSubmit = (e) => e.preventDefault();
 
-  const postsJSX = queriedPosts.map((product, index) => (
+  const postsJSX = queriedPosts.map((post, index) => (
     <Post
       _id={post._id}
       title={post.title}
