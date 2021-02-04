@@ -25,15 +25,17 @@ const Posts = (props) => {
 
   const handleSubmit = (e) => e.preventDefault();
 
-  const postsJSX = queriedPosts.map((post, index) => (
-    <Post
-      _id={post._id}
-      title={post.title}
-      imgURL={post.imgURL}
-      text={post.text}
-      key={index}
-    />
-  ));
+  const postsJSX = queriedPosts.map(function (post, index) {
+    return (
+      <Post
+        _id={post._id}
+        title={post.title}
+        imgURL={post.imgURL}
+        text={post.text}
+        key={index}
+      />
+    );
+  });
 
   return (
     <Layout>
