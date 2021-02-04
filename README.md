@@ -1,4 +1,5 @@
-# blog-app
+# blog-ap
+Testing edits-gigi
 
 ### back-end:
  - [ ] construct schemas: posts, users
