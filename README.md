@@ -26,4 +26,7 @@ Testing edits-gigi
 - [ ] css by component
 - [ ] create and replace favicon
 - [ ] edit title, and meta tags
+<<<<<<< HEAD
 
+=======
+>>>>>>> 42f084b8f8fbc6d2b2b7bf32b129962687a71bce
