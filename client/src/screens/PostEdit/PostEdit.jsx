@@ -50,7 +50,7 @@ const PostEdit = (props) => {
             src={post.imgURL}
             alt={post.title}
           />
-          <form onSubmit={handlSubmit}>
+          <form onSubmit={handleSubmit}>
             <input
               className="edit-input-image-link"
               placeholder="image URL"
