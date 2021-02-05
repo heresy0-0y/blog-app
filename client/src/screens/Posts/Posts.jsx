@@ -16,14 +16,14 @@ const Posts = (props) => {
     fetchPosts();
   }, []);
 
-  const handleSearch = (e) => {
-    const newQueriedPosts = allPosts.filter((post) =>
-      post.title.toLowerCase().includes(e.target.value.toLowerCase())
-    );
-    setQueriedPosts(newQueriedPosts);
-  };
+  // const handleSearch = (e) => {
+  //   const newQueriedPosts = allPosts.filter((post) =>
+  //     post.title.toLowerCase().includes(e.target.value.toLowerCase())
+  //   );
+  //   setQueriedPosts(newQueriedPosts);
+  // };
 
-  const handleSubmit = (e) => e.preventDefault();
+  // const handleSubmit = (e) => e.preventDefault();
 
   const postsJSX = queriedPosts.map(function (post, index) {
     return (
