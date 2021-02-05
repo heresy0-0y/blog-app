@@ -1,4 +1,4 @@
-const Post = require("../models/user");
+const Post = require("../models/post");
 const db = require("../db/connection");
 
 db.on("error", console.error.bind(console, "MongoBleepBloop erger: "));
@@ -6,6 +6,7 @@ db.on("error", console.error.bind(console, "MongoBleepBloop erger: "));
 const getPosts = async (req, res) => {
   try {
     const posts = await Post.find();
+    res.json(posts);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -14,7 +15,7 @@ const getPosts = async (req, res) => {
 const getPost = async (req, res) => {
   try {
     const { id } = req.params;
-    const product = await Post.findById(id);
+    const post = await Post.findById(id);
     if (post) {
       return res.json(post);
     }
@@ -37,20 +38,15 @@ const createPost = async (req, res) => {
 
 const updatePost = async (req, res) => {
   const { id } = req.params;
-  await Post.findByIdAndUpdate(
-    id,
-    req.body,
-    { new: true },
-    (error, product) => {
-      if (error) {
-        return res.status(500).json({ error: error.message });
-      }
-      if (!post) {
-        return res.status(404).json({ message: "Post not found!" });
-      }
-      res.status(200).json(post);
+  await Post.findByIdAndUpdate(id, req.body, { new: true }, (error, post) => {
+    if (error) {
+      return res.status(500).json({ error: error.message });
     }
-  );
+    if (!post) {
+      return res.status(404).json({ message: "Post not found!" });
+    }
+    res.status(200).json(post);
+  });
 };
 
 const deletePost = async (req, res) => {
