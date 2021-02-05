@@ -26,8 +26,6 @@
     "url": "https://github.com/heresy0-0y/blog-app/issues"
   },
   "homepage": "https://github.com/heresy0-0y/blog-app#readme",
-
-  
   "devDependencies": {
     "nodemon": "^2.0.7"
   }
