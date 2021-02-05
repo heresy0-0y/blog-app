@@ -59,6 +59,7 @@ const PostCreate = (props) => {
           autoFocus
           onChange={handleChange}
         />
+        <button type="submit">submid</button>
       </form>
     </Layout>
   );
