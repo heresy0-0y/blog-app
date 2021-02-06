@@ -5,13 +5,13 @@ import Post from "../../components/Post/Post";
 
 const Posts = (props) => {
   const [allPosts, setAllPosts] = useState([]);
-  const [queriedPosts, setQueriedPosts] = useState([]);
+  // const [queriedPosts, setQueriedPosts] = useState([]);
 
   useEffect(() => {
     const fetchPosts = async () => {
       const posts = await getPosts();
       setAllPosts(posts);
-      setQueriedPosts(posts);
+      // setQueriedPosts(posts);
     };
     fetchPosts();
   }, []);
@@ -24,8 +24,10 @@ const Posts = (props) => {
   // };
 
   // const handleSubmit = (e) => e.preventDefault();
-
-  const postsJSX = queriedPosts.map(function (post, index) {
+  //
+  //
+  //   with search or sort, change to queriedPosts
+  const postsJSX = allPosts.map(function (post, index) {
     return (
       <Post
         _id={post._id}
