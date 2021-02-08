@@ -1,4 +1,4 @@
-.postCards {
+postCards {
   width: 90vw;
   padding: 50px;
   margin: 50px;
@@ -6,7 +6,10 @@
 
 .cards {
   display: flex;
-  overflow-x: scroll;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  overflow-y: scroll;
 }
 
 .latest {

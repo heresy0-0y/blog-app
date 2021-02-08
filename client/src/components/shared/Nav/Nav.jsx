@@ -6,8 +6,8 @@ const Nav = () => {
   return (
     <nav>
       <div className="nav">
-        <NavLink className="logo" to="/">
-          PostsApp
+        <NavLink className="h1" to="/">
+         Blog App
         </NavLink>
         <div className="links">
           <NavLink className="link" to="/posts">
