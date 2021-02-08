@@ -12,10 +12,15 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/posts" component={Posts} />
-        <Route exact path="/add-post" component={PostCreate} />
-        <Route exact path="/posts/:id/edit" component={PostEdit} />
-        <Route exact path="/posts/:id" component={PostDetail} />
+        <div className="left">
+          <Route exact path="/posts" component={Posts} />
+
+          <Route exact path="/add-post" component={PostCreate} />
+        </div>
+        <div className="right">
+          <Route exact path="/posts/:id/edit" component={PostEdit} />
+          <Route exact path="/posts/:id" component={PostDetail} />
+        </div>
       </Switch>
     </div>
   );

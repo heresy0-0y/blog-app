@@ -3,6 +3,7 @@ import "./PostCreate.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { Redirect } from "react-router-dom";
 import { createPost } from "../../services/posts";
+import './PostCreate.css'
 
 const PostCreate = (props) => {
   const [post, setPost] = useState({
@@ -59,7 +60,7 @@ const PostCreate = (props) => {
           autoFocus
           onChange={handleChange}
         />
-        <button type="submit">submid</button>
+        <button type="submit">Submit</button>
       </form>
     </Layout>
   );

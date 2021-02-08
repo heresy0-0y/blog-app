@@ -4,10 +4,11 @@ nav {
     flex: 1;
     position: fixed;
     width: 100%;
-    background-color: white;
+    background-color: #7C9885;
     z-index: 1;
     top: 0;
     left: 0;
+    color: #FEDC97;
 }
 
 .nav {
@@ -20,20 +21,17 @@ nav {
     width: 100%;
 }
 
-.logo {
-    font-family: 'Kalam', cursive;
-    text-align: center;
+.h1 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 26px;
     font-weight: bold;
-    font-size: 34px;
+    padding-left: 10px;
     letter-spacing: -3px;
     flex: 1;
     max-width: 30vw;
     transition: 250ms all;
 }
 
-.logo:hover {
-    transform: scale(1.004);
-}
 
 .links {
     flex: 2;
@@ -49,9 +47,10 @@ nav {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #FEDC97;
+    font-family: 'Inconsolata', monospace;
+    font-size: 22px;
 }
-
 @media (max-width: 500px) {
     nav {
         width: 98%;
